@@ -18,8 +18,7 @@ namespace Usuarios_planta.Capa_presentacion
 {
     public partial class Cargue_archivos : Form
     {
-        //MySqlConnection con = new MySqlConnection("server=localhost;Uid=;password=;database=dblibranza;port=3306;persistsecurityinfo=True;");
-        MySqlConnection con = new MySqlConnection("server=;Uid=;password=;database=dblibranza;port=3306;persistsecurityinfo=True;");
+        MySqlConnection con = new MySqlConnection("server=;Uid=userapp;password=userapp;database=dblibranza;port=3306;persistsecurityinfo=True;");
 
         public Cargue_archivos()
         {
@@ -170,6 +169,11 @@ namespace Usuarios_planta.Capa_presentacion
             {
 
             }
+        }
+
+        private void Cargue_archivos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

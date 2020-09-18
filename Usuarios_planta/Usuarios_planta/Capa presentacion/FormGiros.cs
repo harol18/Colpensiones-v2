@@ -22,8 +22,8 @@ namespace Usuarios_planta.Formularios
 {
     public partial class FormGiros : Form
     {
-        MySqlConnection con = new MySqlConnection("server=localhost;Uid=;password=;database=dblibranza;port=3306;persistsecurityinfo=True;");
-        //MySqlConnection con = new MySqlConnection("server=;Uid=;password=;database=dblibranza;port=3306;persistsecurityinfo=True;");
+
+        MySqlConnection con = new MySqlConnection("server=;Uid=userapp;password=userapp;database=dblibranza;port=3306;persistsecurityinfo=True;");
 
 
         Comandos cmds = new Comandos();

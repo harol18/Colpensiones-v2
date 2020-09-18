@@ -329,6 +329,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cargue_archivos";
             this.Text = "Cargue_archivos";
+            this.Load += new System.EventHandler(this.Cargue_archivos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
