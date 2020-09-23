@@ -18,7 +18,7 @@ namespace Usuarios_planta.Capa_presentacion
 {
     public partial class Cargue_archivos : Form
     {
-        MySqlConnection con = new MySqlConnection("server=;Uid=userapp;password=userapp;database=dblibranza;port=3306;persistsecurityinfo=True;");
+        MySqlConnection con = new MySqlConnection("server=82.2.121.99;Uid=userapp;password=userapp;database=dblibranza;port=3306;persistsecurityinfo=True;");
 
         public Cargue_archivos()
         {
@@ -65,47 +65,6 @@ namespace Usuarios_planta.Capa_presentacion
                 }
                 MessageBox.Show("Ok archivo cargado");
             }
-        }
-
-        private void BtnCargar_recaudos_Click(object sender, EventArgs e)
-        {
-            //OpenFileDialog d = new OpenFileDialog();
-            //d.Title = "Importar archivo (.txt, .txt)";
-            //d.Filter = "txt|*.txt";
-            //if (d.ShowDialog() == DialogResult.OK)
-            //{
-
-            //    try
-            //    {
-            //        using (StreamReader reader = new StreamReader(d.FileName))
-            //        {
-            //            string line;  //Variable para almacenarm
-            //            while ((line = reader.ReadLine()) != null)
-            //            {   //Mientras haya mas archivo, leemos mas
-
-            //                string[] fields = line.Split('|'); // Dividimos la linea por el caracter
-            //                //Console.WriteLine(fields[3]);
-            //                con.Open();
-            //                MySqlCommand cmd = con.CreateCommand();
-            //                cmd.CommandText = "INSERT INTO recaudos_colp (Afiliacion,Pagare,Apellido1,Apellido2,Nombre1,Nombre2,Cedula,Cuota,Plazo) value ";
-            //                cmd.CommandText += "(\"" + fields[3] + "\",\"" + fields[4] + "\",\"" + fields[5] + "\",\"" + fields[6] + "\",\"" + fields[7] + "\",\"" + fields[8] + "\"," +
-            //                                    "\"" + fields[9] + "\", \"" + fields[11] + "\", \"" + fields[12] + "\")";
-            //                cmd.ExecuteNonQuery();
-            //                con.Close();
-                            
-            //            }
-
-            //            reader.Close();                        
-            //        }
-            //        MessageBox.Show("Ok archivo cargado");
-
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //       MessageBox.Show("No cargo archivo debido a ", ex.ToString());
-            //        con.Close();
-            //    }
-            //}
         }
 
         private void BtnCargar_contabilizados_Click(object sender, EventArgs e)
@@ -158,22 +117,6 @@ namespace Usuarios_planta.Capa_presentacion
                 con.Close();
                 MessageBox.Show("Ok cargue Archivo en la base de datos");
             }
-        }
-
-        private void guardar_contabilizados(object sender, EventArgs e)
-        {
-            OpenFileDialog d = new OpenFileDialog();
-            d.Title = "Importar archivo (.xlsx, .xlsx)";
-            d.Filter = "xlsx|*.xlsx";
-            if (d.ShowDialog() == DialogResult.OK)
-            {
-
-            }
-        }
-
-        private void Cargue_archivos_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

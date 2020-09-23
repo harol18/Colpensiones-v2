@@ -20,7 +20,7 @@ namespace Usuarios_planta.Capa_presentacion
 {
     public partial class Formdia : Form
     {
-        MySqlConnection con = new MySqlConnection("server=;Uid=userapp;password=userapp;database=dblibranza;port=3306;persistsecurityinfo=True;");
+        MySqlConnection con = new MySqlConnection("server=82.2.121.99;Uid=userapp;password=userapp;database=dblibranza;port=3306;persistsecurityinfo=True;");
 
         Comandos cmds= new Comandos();
         dia_dia cmds_dia = new dia_dia();
@@ -48,7 +48,6 @@ namespace Usuarios_planta.Capa_presentacion
             if (senderBtn != null)
             {
                 DisableButton();
-                //Button
                 currentBtn = (Button)senderBtn;
                 currentBtn.BackColor = Color.FromArgb(37, 36, 81);
                 currentBtn.ForeColor = Color.FromArgb(215, 219, 222);
@@ -441,11 +440,6 @@ namespace Usuarios_planta.Capa_presentacion
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void Formdia_MouseMove(object sender, MouseEventArgs e)
-        {
-            
         }
 
         private void pictureBox12_MouseMove(object sender, MouseEventArgs e)
