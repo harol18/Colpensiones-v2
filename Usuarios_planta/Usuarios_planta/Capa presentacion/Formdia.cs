@@ -20,7 +20,7 @@ namespace Usuarios_planta.Capa_presentacion
 {
     public partial class Formdia : Form
     {
-        MySqlConnection con = new MySqlConnection("server=82.2.121.99;Uid=userapp;password=userapp;database=dblibranza;port=3306;persistsecurityinfo=True;");
+        MySqlConnection con = new MySqlConnection("server=;Uid=;password=;database=dblibranza;port=3306;persistsecurityinfo=True;");
 
         Comandos cmds= new Comandos();
         dia_dia cmds_dia = new dia_dia();
